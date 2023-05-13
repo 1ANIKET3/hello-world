@@ -1,20 +1,24 @@
-<main class="main">
-  <a class="button-twitter" href="https://twitter.com/" target="_blank"></a>
-  <form class="login">
-    <svg class="login-sides">
-      <line class="top-right first" x1="50%" x2="100%" y1="0" y2="0"/>
-      <line class="top-left first" x1="50%" x2="0" y1="0" y2="0"/>
-      <line class="right second" x1="100%" x2="100%" y1="0" y2="100%"/>
-      <line class="left second" x1="0" x2="0" y1="0" y2="100%"/> 
-      <line class="bottom-left third" x1="0" x2="50%" y1="100%" y2="100%"/>
-      <line class="bottom-right third" x1="100%" x2="50%" y1="100%" y2="100%"/>
-	</svg>
-    <fieldset class="login-fieldset">
-      <input type="text" placeholder="Username" class="login-fieldset-field">
-      <input type="password" placeholder="******" class="login-fieldset-field">
-      <button type="submit" class="login-fieldset-submit">
-        Login
-      </button>
-    </fieldset>
-  </form>
-</main>
+<form action="action_page.php">
+  <div class="container">
+    <h1>Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    <hr>
+
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+
+  <div class="container signin">
+    <p>Already have an account? <a href="#">Sign in</a>.</p>
+  </div>
+</form>>
